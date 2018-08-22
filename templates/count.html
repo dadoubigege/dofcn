@@ -1,0 +1,11 @@
+<h1>统计结果,字数总数为{{ count }}</h1>
+<h2>输入的内容为</h2>
+{{ text }}
+<br>
+{{ dict }}
+<h2>出现频率</h2>
+<br>
+{% for word,count in sorted_dict %}
+{{ word }} - {{ count }}
+<br>
+{% endfor %}
